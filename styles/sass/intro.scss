@@ -1,0 +1,30 @@
+
+/*Intro*/
+.intro{
+        .container_button{
+         padding: 0px 16px;
+       }
+}
+
+@media(min-width: 1024px){
+    .intro{
+        div{
+            padding-left: 184px;
+            p{
+                padding-bottom: 56px;
+            }
+        }
+
+        .container_button{
+            padding-left: 200px;
+            .button_1{
+
+                width: 226px;
+                height: 56px;
+
+            }       
+       }
+
+    }
+}
+

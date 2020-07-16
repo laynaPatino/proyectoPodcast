@@ -1,0 +1,154 @@
+/*general*/
+
+
+$color_text:#060A24;
+$color_text_2:#FFFFFF;
+$color_button:#00F3BB;
+$color_button_2:#0000FE;
+$color_background_1:#0000FF;
+$color_background_2:#0000A3;
+$family_1:'IBM Plex Sans', sans-serif;
+$family_2:'IBM Plex Mono', monospace;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.title_h1{
+    font-family: $family_1;
+    font-size: 36px;
+    color: $color_text;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight:400;
+    padding: 16px;
+}
+
+.title{
+    font-family: $family_1;
+    font-size: 36px;
+    color: $color_text;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight:400;
+    padding: 16px;
+}
+
+.titulo_h1{
+    padding-right: 60px;
+}
+
+.title2{
+    color: $color_text_2;
+}
+
+.deco{
+    text-decoration-line: line-through;
+}
+
+.sub_title{
+    font-family: $family_1;
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.text{
+    font-family:$family_2;
+    font-size: 14px;
+    color: $color_text;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding: 16px;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.button{
+    font-family:$family_2;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    background-color: $color_button;
+    width: 288px;
+    height: 48px;
+    font-weight: bolder;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.button:hover{
+    background-image: linear-gradient(225deg, $color_button_2 0%, $color_button 100%);
+    color: $color_text_2;
+}
+
+.background{
+    background-image: linear-gradient(225deg, $color_background_1 0%, $color_background_2 100%);
+    padding: 64px 0px 136px 0px; 
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+}
+
+.background_2{ 
+    clip-path: polygon(0 8%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media(min-width: 768px){
+    .background{
+        padding-top: 213px;
+    }
+
+    .text_responsive{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .button_2{
+        width: 345px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
+
+@media(min-width: 1024px){
+
+    .title_h1{
+        font-size: 64px;
+    }
+    
+    .title{
+        font-size: 48px;
+    }
+
+    .text{
+        font-size: 16px;
+    }
+
+    .point{
+        color: $color_button_2;
+    }
+
+    .background{
+        clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+        padding: 186px 0px 160.6px 0px;
+    }
+
+    .background_2{ 
+        clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+
+    
+}
+
+
+
+

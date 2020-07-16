@@ -1,0 +1,116 @@
+/*nav*/
+$color_text:#060A24;
+$color_text_2:#FFFFFF;
+$color_text_hover:#00F3BB;
+$color_text_active:#060A24;
+$color_background:#0000EC;
+$family_1:'IBM Plex Sans', sans-serif;
+$family_2:'IBM Plex Mono', monospace;
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100vw;
+    padding: 10px 16px 23px ;
+
+    .menu-list{
+        line-height: 28px;
+        width: 100%;
+        font-family:$family_2;
+        color: $color_text_2;
+        background: $color_background;
+        font-size: 16px;
+        position: absolute;
+        left: 0px;
+        top: 53px;
+
+        li{
+            padding: 12px;
+            a{
+                color: $color_text_2;
+                text-decoration: none;
+                &:active{
+                    color: $color_text_2;
+                }
+            }
+        }
+    }
+
+    .fa-times {
+        display: none;
+    }    
+
+    #menu-action, .menu-list {
+        display: none;
+    }
+
+    #menu-action:checked  {
+        + .menu-list{
+            display: inline;
+        }   
+        ~ .toggle-button label .fa-bars{
+            display: none;   
+        }
+        ~ .toggle-button label .fa-times{
+            display: inline;
+        }
+    }
+}
+
+
+@media(min-width: 1024px){
+    nav{
+        padding: 22px 100px 126px ;
+
+        .logo{
+            width: 36px;
+            height: 36px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .menu-list{
+            display:flex;
+            background:transparent;
+            font-size: 16px;
+            top: 0px;
+            justify-content: flex-end;
+            padding-right: 56px;
+
+
+            li{
+                padding: 26px 48px 0px 0px;
+                list-style: none;
+                a{
+                    color:$color_text;
+
+                    &:hover{
+                        color:$color_text_hover;
+                        text-decoration-line: line-through;
+                    }
+    
+                    &:active{
+                        color: $color_text_active;
+                        opacity: 56%;
+                        text-decoration-line: line-through;
+                    }
+                }   
+           
+            }
+        }
+    
+        .fa-bars{
+            display: none;
+        }
+    
+        .fa-times {
+            display: none;
+        }    
+    
+    }
+}
+

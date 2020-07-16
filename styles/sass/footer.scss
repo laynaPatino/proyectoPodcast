@@ -1,0 +1,50 @@
+/*footer*/
+$color_text:#060A24;
+
+footer{
+    padding-top: 8px;
+    padding-bottom: 30px;
+
+    a{
+        color:$color_text;
+        text-decoration: none;
+        padding:1px 19px ;
+        
+    }
+}
+
+@media(min-width: 768px){
+
+    footer{
+        padding: 36px 50px 31px ;
+        .text{
+            padding: 0;
+        }
+        .text_center{
+            text-align: justify;
+        }
+
+        .container{
+            justify-content: flex-end;
+        }
+    }
+
+}
+
+@media(min-width: 1024px){
+
+    footer{
+        padding: 36px 81px 31px 100px ;
+        .text{
+            padding: 0;
+        }
+        .text_center{
+            text-align: justify;
+        }
+
+        .container{
+            justify-content: flex-end;
+        }
+    }
+
+}
